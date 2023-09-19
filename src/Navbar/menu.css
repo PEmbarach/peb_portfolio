@@ -6,16 +6,8 @@
     height: 60px;
     max-width: 100%;
     background-color: #eae7dc;
-    color: black;
   }
-  
-  .brand-name {
-    text-decoration: none;
-    color: black;
-    font-size: 1.3rem;
-    margin-left: 1rem;
-  }
-  
+    
   .navigation-menu {
     margin: 0px 10px 10px 10px;
   }

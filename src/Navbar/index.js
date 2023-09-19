@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./menu.css";
 
-export default function Navbar() {
+const Navbar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
@@ -33,7 +33,7 @@ export default function Navbar() {
       >
         <ul>
           <li>
-            <a href="/skills">Skills</a>
+            <a href="/Skills">Skills</a>
           </li>
           <li>
             <a href="/projects">Projects</a>
@@ -46,3 +46,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+export default Navbar
