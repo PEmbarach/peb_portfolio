@@ -11,11 +11,12 @@
     max-height: 250px;
     width: auto;
     height: auto;
+    margin: 0;
     opacity: 50%;
     mask-image: linear-gradient(to top, transparent 20%, black 60%);
 }
 
-.banner .title {
+.banner .headline {
     text-align: center;
 }
 
