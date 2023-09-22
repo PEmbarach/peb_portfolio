@@ -1,7 +1,5 @@
 section {
     background-color: #eae7dc;
-    align-items: center;
-    justify-content: center;
 }
 
 .skills {
@@ -15,7 +13,7 @@ section {
     display: inline-flex;
 }
 
-.card{
+.card {
     margin: 16px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
 }
@@ -42,4 +40,19 @@ img {
     width: 50px;
     height: 50px;
     margin: auto;
+}
+
+@media screen and (min-width: 758px) and (max-width: 1023px) {
+    .title {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .title {
+        display: inline-block;
+    }
 }

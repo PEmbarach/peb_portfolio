@@ -52,7 +52,7 @@
     background-color: #E85A4F;
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 767px) {
     .hamburger {
       display: block;
     }
@@ -63,9 +63,9 @@
       top: 46px;
       left: 0;
       width: 100%;
-      /* height: calc(100vh - 60px); */
-      background-color: #eae7dc;
+      background-color:  #e98074;
       display: none;
+      z-index: 1;
     }
   
     .navigation-menu li {
@@ -74,13 +74,13 @@
     }
   
     .navigation-menu li a {
-      color: #8e8d8a;
+      color: #eae7dc;
       width: 100%;
       padding: 1.5rem 0;
     }
   
     .navigation-menu li:hover {
-      background-color: #D8C3A5;
+      background-color: #E85A4F;
       border-radius: 10px 10px 10px 10px;
     }
   
