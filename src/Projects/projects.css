@@ -1,0 +1,28 @@
+.title {
+    color: #8e8d8a;
+    font-weight: 500;
+    margin-bottom: 10;
+    font-size: xx-large;
+}
+
+.contentStyle {
+    line-height: '100px';
+    text-align: 'center';
+    background: '#eae7dc';
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+a {
+    color: #8e8d8a;
+    font-weight: 400;
+    font-size: x-large;
+}
+
+a:hover {
+    color: white;
+}
