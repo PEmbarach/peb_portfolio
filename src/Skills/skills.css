@@ -1,11 +1,12 @@
 section {
     background-color: #eae7dc;
+    padding-top:30px;
 }
 
 .skills {
     color: #8e8d8a;
     font-weight: 500;
-    margin: 0;
+    margin-bottom: 10;
     font-size: xx-large;
 }
 
