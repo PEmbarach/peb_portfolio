@@ -1,5 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./menu.css";
+// import Projects from './Projects';
+// import Skills from './Skills';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
+
 
 const Navbar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -33,13 +38,13 @@ const Navbar = () => {
       >
         <ul>
           <li>
-            <a href="/Skills">Skills</a>
+            <AnchorLink href='/Skills'>Skills</AnchorLink>
           </li>
           <li>
-            <a href="/projects">Projects</a>
+            <AnchorLink href='/Projects'>Projects</AnchorLink>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a href="/Contact">Contact</a>
           </li>
         </ul>
       </div>

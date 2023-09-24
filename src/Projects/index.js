@@ -1,44 +1,33 @@
 import './projects.css'
 import React from 'react';
-import { Carousel } from 'antd';
+import { Card } from 'antd';
 
 
-const contentStyle = {
-    lineHeight: '100px',
-    textAlign: 'center',
-    background: '#eae7dc',
-};
 
 const Projects = () => {
     return (
-        <section className='projects'>
-            <h1 className="title">projects</h1>
-            <Carousel autoplay>
-                <div>
-                    <h3 style={contentStyle}>
-                        <a href='https://github.com/PEmbarach/coffeeie' target='_blank'>
-                            <img className='image' src='./image/coffeeie.png'/>
-                            Coffeeie
-                        </a>
-                    </h3>
-                </div>
-                <div>
-                <h3 style={contentStyle}>
-                        <a href='https://github.com/PEmbarach/coffeeie' target='_blank'>
-                            <img className='image' src='./image/coffeeie.png'/>
-                            Coffeeie
-                        </a>
-                    </h3>
-                </div>
-                <div>
-                <h3 style={contentStyle}>
-                        <a href='https://github.com/PEmbarach/coffeeie' target='_blank'>
-                            <img className='image' src='./image/coffeeie.png'/>
-                            Coffeeie
-                        </a>
-                    </h3>
-                </div>
-            </Carousel>
+        <section id="Projects" >
+            <h1 className="projects">Projects</h1>
+            <div className='title'>
+                <Card className="card" bordered={false} style={{ width: 300 }} size='default'>
+                    <a href='https://github.com/PEmbarach/coffeeie' target='_blank' rel="noopener noreferrer">
+                        <h2 className='name'>Coffeeie</h2>
+                        <img src='./image/coffeeie.png' alt='coffeeie' />
+                    </a>
+                </Card>
+                <Card className="card" bordered={false} style={{ width: 300 }}>
+                    <a href='https://github.com/PEmbarach/coffeeie' target='_blank' rel="noopener noreferrer">
+                        <h2 className='name'>Coffeeie</h2>
+                        <img src='./image/coffeeie.png' alt='coffeeie' />
+                    </a>
+                </Card>
+                <Card className="card" bordered={false} style={{ width: 300 }}>
+                    <a href='https://github.com/PEmbarach/coffeeie' target='_blank' rel="noopener noreferrer">
+                        <h2 className='name'>Coffeeie</h2>
+                        <img src='./image/coffeeie.png' alt='coffeeie' />
+                    </a>
+                </Card>
+            </div>
         </section>
     )
 }
