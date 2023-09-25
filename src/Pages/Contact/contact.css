@@ -1,0 +1,18 @@
+Form {
+    background-color: #eae7dc;
+}
+
+h1 {
+    color: #8e8d8a;
+    font-weight: 500;
+    margin-bottom: 1px;
+    margin-top: 0;
+    font-size: xx-large;
+}
+
+.item {
+    color: #8e8d8a;
+}
+.button {
+    /* color: #e98074; */
+}

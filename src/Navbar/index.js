@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./menu.css";
-// import Projects from './Projects';
-// import Skills from './Skills';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
@@ -44,7 +42,9 @@ const Navbar = () => {
             <AnchorLink href='/Projects'>Projects</AnchorLink>
           </li>
           <li>
-            <a href="/Contact">Contact</a>
+            <a href="/Contact" target='_blank' rel="noopener noreferrer">
+              Contact
+            </a>
           </li>
         </ul>
       </div>
