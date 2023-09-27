@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import './contact.css'
 
 import {
@@ -24,7 +24,7 @@ const ContactForm = () => {
 
     const { name,  email, company, message } = contactData;
     const [errors, setErrors] = useState({});
-    const history = useHistory();
+    const history = useNavigate();
 
     const handleChange = (event) => {
         setContactData({
@@ -46,19 +46,19 @@ const ContactForm = () => {
     };
 
     return (
-        <Row classame=''>
-
+        <Row className=''>
             <Col>
-                <Container className=''>
-                    <h1 className=''>Contact Us</h1>
+                <Container className='container'>
+                    <h1>Contact Me</h1>
                     <Form onSubmit={handleSubmit}>
-                        <Form.Group>
-                            <Form.Label>Name</Form.Label>
+                        <Form.Group className="item">
+                            <Form.Label className="label">Name:</Form.Label>
                             <Form.Control
                                 type="text"
                                 name="name"
                                 value={name}
                                 onChange={handleChange}
+                                className="area"
                             />
                         </Form.Group>
                         {errors.name?.map((message, idx) => (
@@ -67,13 +67,15 @@ const ContactForm = () => {
                             </Alert>
                         ))}
 
-                        <Form.Group>
-                            <Form.Label>Email</Form.Label>
+                        <Form.Group className="item">
+                            <Form.Label className="label">Email: </Form.Label>
                             <Form.Control
                                 type="text"
                                 name="email"
                                 value={email}
                                 onChange={handleChange}
+                                className="area"
+
                             />
                         </Form.Group>
                         {errors.email?.map((message, idx) => (
@@ -82,24 +84,26 @@ const ContactForm = () => {
                             </Alert>
                         ))}
 
-                        <Form.Group>
-                            <Form.Label>Company</Form.Label>
+                        <Form.Group className="item">
+                            <Form.Label className="label" >Company:</Form.Label>
                             <Form.Control
                                 type="text"
                                 name="company"
                                 value={company}
                                 onChange={handleChange}
+                                className="area"
                             />
                         </Form.Group>
 
-                        <Form.Group>
-                            <Form.Label>Message</Form.Label>
+                        <Form.Group className="item">
+                            <Form.Label className="label" >Message:</Form.Label>
                             <Form.Control
                                 as="textarea"
                                 rows={4}
                                 name="message"
                                 value={message}
                                 onChange={handleChange}
+                                className="area"
                             />
                         </Form.Group>
                         {errors.message?.map((message, idx) => (
@@ -109,7 +113,7 @@ const ContactForm = () => {
                         ))}
 
                         <Button
-                            className=''
+                            className='button'
                             type="submit"
                         >
                             Submit

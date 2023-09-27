@@ -49,7 +49,7 @@
   }
   
   .hamburger:hover {
-    background-color: #E85A4F;
+    opacity: 0.8;
   }
   
   @media screen and (max-width: 767px) {

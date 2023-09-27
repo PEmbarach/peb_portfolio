@@ -42,7 +42,7 @@ const Navbar = () => {
             <AnchorLink href='/Projects'>Projects</AnchorLink>
           </li>
           <li>
-            <a href="/Contact" target='_blank' rel="noopener noreferrer">
+            <a href="/Contact" rel="noopener noreferrer">
               Contact
             </a>
           </li>
