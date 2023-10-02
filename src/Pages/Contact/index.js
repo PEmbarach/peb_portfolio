@@ -8,7 +8,6 @@ import {
     Col,
     Row,
     Container,
-    Alert
 } from "react-bootstrap";
 import { axiosReq } from "../../api/axiosDefaults";
 
@@ -22,9 +21,9 @@ const ContactForm = () => {
         message: "",
     });
 
-    const { name,  email, company, message } = contactData;
-    const [errors, setErrors] = useState({});
-    const history = useNavigate();
+    const { name, email, company, message } = contactData;
+    const [submitted, setSubmitted] = useState(false);
+    const navigate = useNavigate();
 
     const handleChange = (event) => {
         setContactData({
@@ -35,25 +34,28 @@ const ContactForm = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        console.log(contactData)
         try {
-            await axiosReq.post("/contact/", contactData);
-            history.push("/confirmation");
+            await axiosReq.post("/message/", contactData);
+            setSubmitted(true);
+            navigate('/confirmation');
         } catch (err) {
-            // console.log('ERROR in submit: ', err)
-            setErrors(err.response?.data);
+            console.log('ERROR in submit: ', err)
         }
     };
 
     return (
-        <Row className=''>
+        <Row>
             <Col>
                 <Container className='container'>
                     <h1>Contact Me</h1>
+                    {submitted ? (
+                        <p>Your message has been sent</p>
+                    ) : (
                     <Form onSubmit={handleSubmit}>
                         <Form.Group className="item">
                             <Form.Label className="label">Name:</Form.Label>
                             <Form.Control
+                                required={true}
                                 type="text"
                                 name="name"
                                 value={name}
@@ -61,32 +63,21 @@ const ContactForm = () => {
                                 className="area"
                             />
                         </Form.Group>
-                        {errors.name?.map((message, idx) => (
-                            <Alert variant="warning" key={idx}>
-                                {message}
-                            </Alert>
-                        ))}
-
                         <Form.Group className="item">
                             <Form.Label className="label">Email: </Form.Label>
                             <Form.Control
+                                required={true}
                                 type="text"
                                 name="email"
                                 value={email}
                                 onChange={handleChange}
                                 className="area"
-
                             />
                         </Form.Group>
-                        {errors.email?.map((message, idx) => (
-                            <Alert variant="warning" key={idx}>
-                                {message}
-                            </Alert>
-                        ))}
-
                         <Form.Group className="item">
                             <Form.Label className="label" >Company:</Form.Label>
                             <Form.Control
+                                required={true}
                                 type="text"
                                 name="company"
                                 value={company}
@@ -98,6 +89,7 @@ const ContactForm = () => {
                         <Form.Group className="item">
                             <Form.Label className="label" >Message:</Form.Label>
                             <Form.Control
+                                required={true}
                                 as="textarea"
                                 rows={4}
                                 name="message"
@@ -106,24 +98,14 @@ const ContactForm = () => {
                                 className="area"
                             />
                         </Form.Group>
-                        {errors.message?.map((message, idx) => (
-                            <Alert variant="warning" key={idx}>
-                                {message}
-                            </Alert>
-                        ))}
-
                         <Button
                             className='button'
                             type="submit"
                         >
                             Submit
                         </Button>
-                        {errors.non_field_errors?.map((message, idx) => (
-                            <Alert key={idx} variant="warning" className="mt-3">
-                                {message}
-                            </Alert>
-                        ))}
                     </Form>
+                    )}
                 </Container>
             </Col>
         </Row>

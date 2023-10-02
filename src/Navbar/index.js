@@ -4,7 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
 
-const Navbar = () => {
+const Menu = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
@@ -52,4 +52,4 @@ const Navbar = () => {
   );
 }
 
-export default Navbar
+export default Menu

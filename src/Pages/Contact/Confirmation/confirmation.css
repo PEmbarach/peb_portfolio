@@ -1,0 +1,12 @@
+h1 {
+    padding-bottom: 16px;
+}
+
+p {
+    background-color: #eae7dc;
+    margin: 0;
+    text-align: center;
+    color: #8e8d8a;
+    font-weight: 500;
+    padding: 16px 0 16px 0;
+}

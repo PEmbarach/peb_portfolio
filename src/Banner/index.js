@@ -1,6 +1,6 @@
 import './banner.css'
 import * as React from 'react';
-import Navbar from '../Navbar';
+// import Navbar from '../Navbar';
 
 const Banner = () => {
 
@@ -11,7 +11,7 @@ const Banner = () => {
         <h1>PABLO EMBARACH</h1>
         <h2>Frontend Developer</h2>
         <h3>&lt;turning ideas into reality through codes&gt;</h3>
-        <Navbar />
+        {/* <Navbar /> */}
       </div>
     </header>
   )
