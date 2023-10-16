@@ -19,11 +19,11 @@ const Skills = () => {
                         <h2>JavaScript</h2>
                         <img src='/image/js.png' alt='logo javascript' className='image' />
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nulla nisl enim, laoreet feugiat velit sed,
-                            feugiat fringilla orci. Cras pellentesque diam posuere,
-                            ultricies turpis a, fermentum velit. Cras id arcu sapien.
-                            Etiam mattis ex at massa aliquam pretium.
+                            My knowledge in JavaScript covers from work with Functions and Objects,
+                            how to manipulate the DOM, handling DOM Events, work with Forms,
+                            Arrow Functions, Spread, rest and destructuring, also include how to work with Map,
+                            filter and reduce. I worked with JQuery library , consuming API,
+                            preview of how to work with Jest for testing.
                         </p>
                     </h3>
                 </div>
@@ -32,11 +32,12 @@ const Skills = () => {
                         <h2>React</h2>
                         <img src='/image/react.png' alt='logo react' className='image' />
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nulla nisl enim, laoreet feugiat velit sed,
-                            feugiat fringilla orci. Cras pellentesque diam posuere,
-                            ultricies turpis a, fermentum velit. Cras id arcu sapien.
-                            Etiam mattis ex at massa aliquam pretium.
+                            In React, form the initial installation and configuration to create React project,
+                            work with components, handle events, rendering list, forms, hooks like useState,
+                            how to work with props, render lists with .map,
+                            nested elements using children props, manipulate and transform arrays of objects,
+                            filter items from an array, conditional rendering.
+                            Also the best practices, how to keep my code clean and organised.
                         </p>
                     </h3>
                 </div>
@@ -45,11 +46,12 @@ const Skills = () => {
                         <h2>Python</h2>
                         <img src='/image/python.png' alt='logo python' className='image' />
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nulla nisl enim, laoreet feugiat velit sed,
-                            feugiat fringilla orci. Cras pellentesque diam posuere,
-                            ultricies turpis a, fermentum velit. Cras id arcu sapien.
-                            Etiam mattis ex at massa aliquam pretium.
+                            Working with Python, I've learned about variables, specific data types,
+                            operators, comparators, flow control, data structures, how to create functions,
+                            classes, object oriented concepts.
+                            Also how to use Django framework , create backend API's, using models,
+                            serializer, permissions and authentication.
+                            How to setup and connect my database (SQL) with the frontend.
                         </p>
                     </h3>
                 </div>
