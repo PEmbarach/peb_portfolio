@@ -16,17 +16,17 @@ const Projects = () => {
                     </a>
                 </Card>
                 <Card className="card" bordered={false} style={{ width: 300 }}>
+                    <a href='https://github.com/PEmbarach/MyCookbook' target='_blank' rel="noopener noreferrer">
+                        <h2 className='name'>MyCookbook</h2>
+                        <img src='./image/MyCookbook.png' alt='mycookbook' />
+                    </a>
+                </Card>
+                {/* <Card className="card" bordered={false} style={{ width: 300 }}>
                     <a href='https://github.com/PEmbarach/coffeeie' target='_blank' rel="noopener noreferrer">
                         <h2 className='name'>Coffeeie</h2>
                         <img src='./image/coffeeie.png' alt='coffeeie' />
                     </a>
-                </Card>
-                <Card className="card" bordered={false} style={{ width: 300 }}>
-                    <a href='https://github.com/PEmbarach/coffeeie' target='_blank' rel="noopener noreferrer">
-                        <h2 className='name'>Coffeeie</h2>
-                        <img src='./image/coffeeie.png' alt='coffeeie' />
-                    </a>
-                </Card>
+                </Card> */}
             </div>
         </section>
     )

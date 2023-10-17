@@ -42,6 +42,9 @@ const Menu = () => {
             <AnchorLink href='/Projects'>Projects</AnchorLink>
           </li>
           <li>
+            <AnchorLink href='/About'>About Me</AnchorLink>
+          </li>
+          <li>
             <a href="/Contact" rel="noopener noreferrer">
               Contact
             </a>

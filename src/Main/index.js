@@ -1,3 +1,4 @@
+import About from "../About"
 import Projects from "../Projects"
 import Skills from "../Skills"
 
@@ -6,6 +7,7 @@ const Main = () => {
         <>
             <Skills />
             <Projects />
+            <About />
         </>
     )
 }

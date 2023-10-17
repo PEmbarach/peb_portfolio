@@ -43,6 +43,12 @@ const NavbarContact = () => {
                             Projects
                         </a>
                     </li>
+                    <li>
+                        <a href="/" rel="noopener noreferrer">
+                            About Me
+                        </a>
+                    </li>
+
                 </ul>
             </div>
         </nav>
