@@ -15,11 +15,12 @@
     height: 150px;
 }
 
-p{
+.info {
     color: #8e8d8a;
     text-align: justify;
     line-height: 1.6em;
     padding: 64px;
+    font-weight: 400;
 }
 
 h2 {

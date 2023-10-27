@@ -1,0 +1,19 @@
+section {
+    background-color: #eae7dc;
+    padding-top:30px;
+}
+
+.about_me {
+    color: #8e8d8a;
+    font-weight: 500;
+    margin-bottom: 10;
+    font-size: xx-large;
+}
+
+.info_about {
+    color: #8e8d8a;
+    text-align: justify;
+    line-height: 1.6em;
+    font-weight: 400;
+    padding: 16px 64px 16px 64px;
+}

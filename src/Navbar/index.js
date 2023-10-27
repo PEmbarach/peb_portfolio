@@ -36,13 +36,13 @@ const Menu = () => {
       >
         <ul>
           <li>
-            <AnchorLink href='/Skills'>Skills</AnchorLink>
+            <AnchorLink href='#Skills'>Skills</AnchorLink>
           </li>
           <li>
-            <AnchorLink href='/Projects'>Projects</AnchorLink>
+            <AnchorLink href='#Projects'>Projects</AnchorLink>
           </li>
           <li>
-            <AnchorLink href='/About'>About Me</AnchorLink>
+            <AnchorLink href='#About_me'>About Me</AnchorLink>
           </li>
           <li>
             <a href="/Contact" rel="noopener noreferrer">
