@@ -28,7 +28,7 @@
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.11",
     "web-vitals": "^2.1.4",
-    "npm": "^10.2.1"
+    "npm": "^9.6.1"
   },
   "scripts": {
     "heroku-prebuild": "npm install -g serve",
