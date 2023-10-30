@@ -27,9 +27,11 @@
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.11",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "npm": "^10.2.1"
   },
   "scripts": {
+    "heroku-prebuild": "npm install -g serve",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
